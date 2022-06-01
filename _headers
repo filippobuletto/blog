@@ -1,0 +1,9 @@
+# https://developers.cloudflare.com/pages/platform/headers
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: document-domain=(), interest-cohort=()
+  Content-Security-Policy: script-src 'self' 'unsafe-inline' *.filippobuletto.info giscus.app formspree.io; frame-src 'self' giscus.app formspree.io; object-src 'self'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains

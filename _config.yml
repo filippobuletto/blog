@@ -1,0 +1,152 @@
+locale                   : "en-US"
+title                    : "Filippo Buletto's Blog"
+email                    : "me@filippobuletto.info"
+description              : "Filippo Buletto's Blog"
+repository               : "filippobuletto/blog"
+baseurl                  : ""
+twitter_username         : filippomito
+github_username          : filippobuletto
+minimal_mistakes_skin    : dark
+search                   : true
+
+# Build settings
+markdown                 : kramdown
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Europe/Rome # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - .htaccess
+  - _pages
+  - _headers
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name             : "Filippo"
+  avatar           : "/assets/images/filippo-buletto.jpg"
+  bio              : "Cyber Security Specialist, Software Engineer."
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:me@filippobuletto.info"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/filippobuletto/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/filippobuletto"
+    - label: "Matrix"
+      icon: "far fa-fw fa-comments"
+      url: "https://matrix.to/#/@filippobuletto:matrix.filippobuletto.info"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/filippomito"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/filippo.buletto"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/ad_astra_photo/"
+
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/filippobuletto/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/filippobuletto"
+    - label: "Matrix"
+      icon: "far fa-fw fa-comments"
+      url: "https://matrix.to/#/@filippobuletto:matrix.filippobuletto.info"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mastodon.uno/@filippomito"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      show_date: true
+      share: true
+      related: true
+      comments: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : R_kgDOHbj_Mg
+    category_name        : General
+    category_id          : DIC_kwDOHbj_Ms4CRHSG
+    discussion_term      : "og:title"
+    reactions_enabled    : "0"
+    theme                : "dark_dimmed"
+    data-input-position  : "top"
+    data-loading         : "lazy"
