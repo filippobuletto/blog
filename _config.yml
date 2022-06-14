@@ -1,6 +1,8 @@
+locale                   : "en-US"
 title                    : "Filippo Buletto's Blog"
 email                    : "me@filippobuletto.info"
 description              : "Filippo Buletto's Blog"
+repository               : "filippobuletto/blog"
 twitter_username         : filippomito
 github_username          : filippobuletto
 minimal_mistakes_skin    : dark
@@ -119,7 +121,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      show_date: true
       share: true
       related: true
   # _pages
