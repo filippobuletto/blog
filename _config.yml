@@ -23,6 +23,7 @@ include:
   - .htaccess
   - _pages
   - _headers
+  - .well-known
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
