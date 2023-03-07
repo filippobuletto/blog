@@ -1,11 +1,17 @@
 locale                   : "en-US"
 title                    : "Filippo Buletto's Blog"
+name                     : "Filippo Buletto"
 email                    : "me@filippobuletto.info"
 description              : "Filippo Buletto's Blog"
 repository               : "filippobuletto/blog"
+url                      : "https://blog.filippobuletto.info"
 baseurl                  : ""
-twitter_username         : filippomito
-github_username          : filippobuletto
+twitter:
+  username               : filippomito
+github:
+  username               : filippobuletto
+facebook:
+  username               : filippo.buletto
 minimal_mistakes_skin    : dark
 search                   : true
 
@@ -132,6 +138,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _extrapolation
+  - scope:
+      path: "_extrapolation"
+      type: extrapolation
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+      share: true
+      comments: true
 
 category_archive:
   type: liquid
@@ -151,3 +167,8 @@ comments:
     theme                : "dark_dimmed"
     data-input-position  : "top"
     data-loading         : "lazy"
+
+collections:
+  extrapolation:
+    output: true
+    permalink: /:collection/:path/

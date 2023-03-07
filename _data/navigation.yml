@@ -8,14 +8,12 @@ main:
     url: /cv/
   - title: "Courses and Certifications"
     url: /courses-certifications/
-  - title: "Posts"
-    url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Extrapolation"
+    url: /extrapolation/
   - title: "Terms &amp; Privacy Policy"
     url: /terms/
+  - title: "Posts"
+    url: /year-archive/
 
 kubernetes-toolbox:
   - title: "Terminal"
