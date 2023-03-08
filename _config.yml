@@ -78,7 +78,7 @@ whitelist:
 
 author:
   name             : "Filippo"
-  avatar           : "/assets/images/filippo-buletto.jpg"
+  avatar           : "/assets/images/filippo-buletto-logo.png"
   bio              : "Cyber Security Specialist, Software Engineer."
   links:
     - label: "Email"
