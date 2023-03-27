@@ -50,9 +50,13 @@ This site is hosted and proxied through Cloudflare. *Cloudflare, Inc.* is a U.S.
 
 The contact form for this site is hosted by Formspree. See [Formspree’s Privacy Policy](https://formspree.io/legal/privacy-policy/)
 
-## Amazon
+## Amazon Privacy Policy
 
 Amazon, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link that takes you to the site of one of their merchants (see "Disclosure policy"). Read [Amazon’s Privacy Notice](https://www.amazon.it/gp/help/customer/display.html?nodeId=200545460).
+
+## GitHub Privacy Policy
+
+The Font stacks for this site are provided by a GitHub page. See [GitHub’s Privacy Policies](https://docs.github.com/en/site-policy/privacy-policies). The Font is [Iosevka](https://typeof.net/Iosevka/), an open-source typeface family licensed under the [SIL Open Font License 1.1](https://github.com/be5invis/Iosevka/blob/main/LICENSE.md).
 
 ## Embedded content from other websites
 
