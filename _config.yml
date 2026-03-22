@@ -90,18 +90,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/filippobuletto"
-    - label: "Matrix"
-      icon: "far fa-fw fa-comments"
-      url: "https://matrix.to/#/@filippobuletto:matrix.filippobuletto.info"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/filippomito"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/filippo.buletto"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/ad_astra_photo/"
 
 footer:
   links:
@@ -111,9 +99,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/filippobuletto"
-    - label: "Matrix"
-      icon: "far fa-fw fa-comments"
-      url: "https://matrix.to/#/@filippobuletto:matrix.filippobuletto.info"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://mastodon.uno/@filippomito"

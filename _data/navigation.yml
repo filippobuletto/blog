@@ -5,7 +5,7 @@ main:
   - title: "About me"
     url: /about/
   - title: "Curriculum Vitae"
-    url: /cv/
+    url: "https://cv.filippobuletto.info"
   - title: "Courses and Certifications"
     url: /courses-certifications/
   - title: "Extrapolation"
