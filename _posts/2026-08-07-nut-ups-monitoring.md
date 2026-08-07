@@ -159,3 +159,8 @@ NUT handles hardware compatibility and systemd schedules collection. Node
 Exporter exposes the metrics, while Prometheus and Grafana provide the history,
 alerts, and views needed to use them. The service file and the generated
 `/tmp/nut.prom` file show how the pieces fit together.
+
+The complete project is available at
+[github.com/filippobuletto/nut-ups-monitoring](https://github.com/filippobuletto/nut-ups-monitoring).
+Take a look at the repository for the service files, dashboard, alert rules,
+and installation instructions.
