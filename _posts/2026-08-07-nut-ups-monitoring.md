@@ -11,11 +11,12 @@ tags:
   - grafana
   - ups
   - llm
+header:
+  overlay_image: https://raw.githubusercontent.com/filippobuletto/nut-ups-monitoring/main/docs/dashboard.png
+  overlay_filter: rgba(0, 0, 0, 0.5)
 toc: true
 toc_sticky: true
 ---
-
-# Monitoring a UPS with standard Linux components
 
 A UPS can keep equipment running through a power cut or unstable mains power.
 Its battery health, estimated runtime, load, and operating state determine how
