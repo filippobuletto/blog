@@ -54,6 +54,7 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - AGENTS.md
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
