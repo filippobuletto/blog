@@ -36,6 +36,8 @@ There is no `Gemfile.lock` (it is gitignored), no CI, and no test suite. The onl
 
 `.ruby-version` pins Ruby to 3.4.4. Cloudflare Pages (build system v3) reads this file to choose the Ruby version, so use the same version locally. Change it only after `bundle exec jekyll build` passes on the new version.
 
+Always run Jekyll through `bundle exec`. The Cloudflare v3 build image ships a global Jekyll 4.x that conflicts with the `Gemfile` versions. The Cloudflare Pages build command, set in the dashboard, must be `bundle exec jekyll build` with output directory `_site`. A plain `jekyll build` fails with `Gem::LoadError`.
+
 ```sh
 bundle install
 bundle exec jekyll serve --livereload   # http://localhost:4000
