@@ -7,7 +7,7 @@ Guide for coding agents working on this repository.
 Personal blog of Filippo Buletto, published at <https://blog.filippobuletto.info>.
 
 - Static site built with Jekyll 3.x (`Gemfile`: `jekyll ~> 3.5`) and kramdown with the GFM parser.
-- Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) `4.24.0`, installed as the `minimal-mistakes-jekyll` gem with the `dark` skin. Theme files are not vendored in this repo.
+- Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) `4.28.1`, installed as the `minimal-mistakes-jekyll` gem with the `dark` skin. Theme files are not vendored in this repo.
 - Hosted on Cloudflare Pages: `_headers` sets the HTTP response headers.
 - Comments use giscus (GitHub Discussions on `filippobuletto/blog`). The contact button uses Formspree.
 - Content is licensed CC BY 4.0 (`LICENSE`).
@@ -95,7 +95,7 @@ Run `bundle exec jekyll build` after every change and fix any errors or warnings
 ## Theme customization
 
 - Customize the theme only through the override points under `_includes/` and through `assets/css/main.scss`. Don't copy whole theme layouts into the repo unless an override hook doesn't exist.
-- Check the theme docs for version 4.24.0 before you use any front matter or config option: <https://github.com/mmistakes/minimal-mistakes/tree/4.24.0/docs/_docs>
+- Check the theme docs for version 4.28.1 before you use any front matter or config option: <https://github.com/mmistakes/minimal-mistakes/tree/4.28.1/docs/_docs>
 - Enabled plugins must appear in both `plugins` and `whitelist` in `_config.yml`, and in the `jekyll_plugins` group in `Gemfile`.
 
 ## Security headers
