@@ -12,7 +12,7 @@ tags:
   - development
 toc: true
 toc_sticky: true
-toc_icon: "shield-check"
+toc_icon: "shield-halved"
 ---
 
 # Introduction

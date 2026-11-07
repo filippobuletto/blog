@@ -14,7 +14,7 @@ tags:
   - fitlife
   - fitness
 toc: true
-toc_icon: "thumbs-o-up"
+toc_icon: "thumbs-up"
 ---
 
 # Hello everyone!

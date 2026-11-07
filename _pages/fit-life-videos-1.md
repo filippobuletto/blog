@@ -2,7 +2,7 @@
 title: "My journey to fit life - Video gallery"
 permalink: /fit-life-videos-1/
 toc: true
-toc_icon: "thumbs-o-up"
+toc_icon: "thumbs-up"
 ---
 
 In this page I'll collect all the photo/video medias to help you better understand excercises I'm proposing in my fitness plan.

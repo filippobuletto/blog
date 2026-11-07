@@ -8,7 +8,7 @@ tags:
   - filippo
   - aboutme
 toc: true
-toc_icon: "thumbs-o-up"
+toc_icon: "thumbs-up"
 ---
 
 # First Blog Post
