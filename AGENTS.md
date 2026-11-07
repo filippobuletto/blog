@@ -6,7 +6,7 @@ Guide for coding agents working on this repository.
 
 Personal blog of Filippo Buletto, published at <https://blog.filippobuletto.info>.
 
-- Static site built with Jekyll 3.x (`Gemfile`: `jekyll ~> 3.5`) and kramdown with the GFM parser.
+- Static site built with Jekyll 4.x (`Gemfile`: `jekyll ~> 4.4`), Dart Sass through `jekyll-sass-converter` 3, and kramdown with the GFM parser. Sass options live in the `sass:` block of `_config.yml`.
 - Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) `4.28.1`, installed as the `minimal-mistakes-jekyll` gem with the `dark` skin. Theme files are not vendored in this repo.
 - Hosted on Cloudflare Pages (build system v3): `_headers` sets the HTTP response headers and `.ruby-version` sets the build Ruby version.
 - Comments use giscus (GitHub Discussions on `filippobuletto/blog`). The contact button uses Formspree.

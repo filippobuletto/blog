@@ -18,6 +18,11 @@ search                   : true
 # Build settings
 markdown                 : kramdown
 theme                    : minimal-mistakes-jekyll
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/js-api/interfaces/options/#style
+  quiet_deps: true
+  silence_deprecations: ["import"]
 
 # Outputting
 permalink: /:categories/:title/

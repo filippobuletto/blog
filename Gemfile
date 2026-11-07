@@ -5,7 +5,7 @@ source "https://rubygems.org"
 gem "minimal-mistakes-jekyll", "4.28.1"
 
 gem "kramdown-parser-gfm"
-gem "jekyll", "~> 3.5"
+gem "jekyll", "~> 4.4"
 gem "tzinfo-data"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
