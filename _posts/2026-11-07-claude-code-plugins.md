@@ -15,16 +15,16 @@ toc_sticky: true
 ---
 
 I use Claude Code every day at work. For my personal projects I run models
-locally instead. Over time, at work, I wrote a few hooks and scripts for
-problems I kept running into. Until recently they lived in my local
-configuration, which meant copying files around by hand on every
-machine. Claude Code plugins solve that: a plugin bundles hooks, skills and
-options, and a marketplace lists plugins so anyone can install them with
-one command.
+locally. Using Claude Code that much, I kept hitting the same few problems:
+an agent that could change a Kubernetes cluster when I only wanted it to
+look, MCP tools returning JSON that burns tokens, and upgrading Java
+projects to newer JDKs. I wrote a hook or a set of skills for each one.
 
-I packaged three of them as plugins and published a marketplace,
+Claude Code packages hooks, skills and options as plugins, and a
+marketplace lists plugins so anyone can install them with one command. I
+turned all three into plugins and published a marketplace,
 [filippobuletto/claude-plugins](https://github.com/filippobuletto/claude-plugins),
-that lists all of them:
+that lists them:
 
 ```text
 /plugin marketplace add filippobuletto/claude-plugins
