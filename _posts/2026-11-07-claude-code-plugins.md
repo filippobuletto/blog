@@ -158,8 +158,7 @@ Error Prone. `java-migrate` fixes what each hop breaks (8 to 11, 11 to 17,
 17 to 21, 21 to 25, 25 to 27). `java-modernize` adopts newer features like
 records, pattern matching and virtual threads, and only if I ask for it.
 
-I didn't want the model to guess the mechanical parts, so two scripts do
-them. `detect.sh` reports the build tool, wrapper, Java release and where it
+Two scripts do the mechanical part. `detect.sh` reports the build tool, wrapper, Java release and where it
 is set, plugin versions, the JDKs pinned in CI and Docker, and the JDKs
 installed on the machine. `scan.sh` runs a catalog of patterns over
 sources, build files and launch scripts and reports each hit with the JDK
@@ -178,8 +177,8 @@ never weaken tests and never install JDKs for me. The plan goes in
 `.java-upgrade/plan.md` and progress in `progress.md`, so an interrupted
 upgrade can resume.
 
-Language models easily get version facts wrong, so all of
-them live in one file, `jdk-matrix.md`, checked against openjdk.org. It
+All version facts live in one file, `jdk-matrix.md`, checked against
+openjdk.org. It
 also lists common wrong advice the skills must avoid, such as String
 Templates (removed in 23), `-XX:+ZGenerational` (obsolete in 24) and
 `StructuredTaskScope.ShutdownOnFailure` (gone in 25). A test script
@@ -192,9 +191,8 @@ runs a baseline without the plugin.
 ## One marketplace for all of them
 
 At first every plugin repository was also its own single-plugin
-marketplace, so each one needed its own `/plugin marketplace add`. With
-three plugins that got silly. I moved them all to one marketplace named
-`filippobuletto`. It was a breaking change for the two plugins already
+marketplace, so each one needed its own `/plugin marketplace add`. I
+moved them all to one marketplace named `filippobuletto`. It was a breaking change for the two plugins already
 out: `kubectl-guard@kubectl-guard` and
 `toon-mcp-squeeze@toon-mcp-squeeze` became
 `kubectl-guard@filippobuletto` and `toon-mcp-squeeze@filippobuletto`.
