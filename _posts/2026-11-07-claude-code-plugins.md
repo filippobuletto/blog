@@ -217,3 +217,14 @@ The move also broke the toon setup skill. It writes options under the
 plugin's config key, which includes the marketplace name, so after the
 rename it wrote settings that the installed plugin never read. The fix
 was to point it at the `toon-mcp-squeeze@filippobuletto` key.
+
+## Try them
+
+If you use Claude Code, add the marketplace and install whichever plugin
+fits your work. When something breaks, or you have an idea for an
+improvement, open an issue on the plugin's own repository:
+[kubectl-guard](https://github.com/filippobuletto/kubectl-Guard-for-Claude-Code/issues),
+[toon-mcp-squeeze](https://github.com/filippobuletto/toon-mcp-squeeze/issues)
+or [java-toolkit](https://github.com/filippobuletto/java-toolkit/issues).
+Problems with the catalog itself go to
+[claude-plugins](https://github.com/filippobuletto/claude-plugins/issues).
