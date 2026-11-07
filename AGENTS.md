@@ -8,7 +8,7 @@ Personal blog of Filippo Buletto, published at <https://blog.filippobuletto.info
 
 - Static site built with Jekyll 3.x (`Gemfile`: `jekyll ~> 3.5`) and kramdown with the GFM parser.
 - Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) `4.28.1`, installed as the `minimal-mistakes-jekyll` gem with the `dark` skin. Theme files are not vendored in this repo.
-- Hosted on Cloudflare Pages: `_headers` sets the HTTP response headers.
+- Hosted on Cloudflare Pages (build system v3): `_headers` sets the HTTP response headers and `.ruby-version` sets the build Ruby version.
 - Comments use giscus (GitHub Discussions on `filippobuletto/blog`). The contact button uses Formspree.
 - Content is licensed CC BY 4.0 (`LICENSE`).
 
@@ -33,6 +33,8 @@ Personal blog of Filippo Buletto, published at <https://blog.filippobuletto.info
 ## Local development
 
 There is no `Gemfile.lock` (it is gitignored), no CI, and no test suite. The only check is a clean build.
+
+`.ruby-version` pins Ruby to 3.4.4. Cloudflare Pages (build system v3) reads this file to choose the Ruby version, so use the same version locally. Change it only after `bundle exec jekyll build` passes on the new version.
 
 ```sh
 bundle install
