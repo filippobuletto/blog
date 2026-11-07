@@ -47,7 +47,7 @@ kubernetes-toolbox:
       - title: "kubespy"
         url: /kubernetes-toolbox/#kubespy
       - title: "kubectl-neat"
-        url: /kubernetes-tookbox/#kubectl-neat
+        url: /kubernetes-toolbox/#kubectl-neat
   - title: "Web UI"
     children:
       - title: "kubebox"
