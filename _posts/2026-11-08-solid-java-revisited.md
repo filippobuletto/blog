@@ -9,8 +9,9 @@ tags:
   - claude-code
   - llm
 header:
-  overlay_image: /assets/images/solid.jpg
+  overlay_image: /assets/images/solid-java-revisited.jpg
   overlay_filter: rgba(0, 0, 0, 0.5)
+  caption: "Photo: [Simone Girlanda](https://www.flickr.com/photos/simonegirlanda/8150626452/), [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)"
 toc: true
 toc_sticky: true
 ---
@@ -50,8 +51,8 @@ method body with real logic.
 
 ## What was wrong beyond the syntax
 
-Fixing the syntax wasn't enough. Some examples showed a different problem
-from the one in their heading, and some definitions were loose.
+Some examples showed a different problem from the one in their heading,
+and some definitions were loose.
 
 ### The LSP example is about inheritance, not substitution
 
@@ -90,8 +91,8 @@ record Point(int x, int y) {}
 record ColorPoint(Point point, String color) {}
 ```
 
-The counting set still deserves a fix, and composition is still the
-answer. Extending `AbstractSet` makes it short, because `AbstractSet`
+The counting set still deserves a fix, and composition is the answer.
+Extending `AbstractSet` makes it short, because `AbstractSet`
 inherits from `AbstractCollection` an `addAll` documented to call `add`
 once per element:
 
@@ -168,10 +169,10 @@ the principles look in code.
 | `InstantSource` | 17 | The JDK applying ISP to `Clock` |
 | Pattern matching for `switch` | 21 | Exhaustive `switch` over a sealed hierarchy (OCP) |
 
-The open/closed principle gets a second shape. When new variants arrive
-often, an interface with implementations still fits. When the variants
-are fixed and new operations arrive often, a sealed interface with an
-exhaustive `switch` fits better:
+When new variants arrive often, an interface with implementations still
+fits the open/closed principle. When the variants are fixed and new
+operations arrive often, a sealed interface with an exhaustive `switch`
+fits better:
 
 ```java
 sealed interface Shape permits Circle, Rect {}
@@ -189,8 +190,7 @@ static double area(Shape shape) {
 ```
 
 There is no `default` branch. When a new record joins the `permits` list,
-javac rejects every `switch` that misses it. Here a `switch` on types is
-the design.
+javac rejects every `switch` that misses it.
 
 `InstantSource` is a small JDK example of interface segregation. Code that
 only needs the current instant can take an `InstantSource` instead of a
@@ -240,8 +240,7 @@ Each Java example in the skill carries a marker with its minimum JDK, such as
 `<!-- compile: jdk=21 fails-below -->`. The repository's test script
 compiles each marked snippet with that JDK. With `fails-below` it also
 checks that the previous release rejects the snippet: the sealed `Shape`
-must compile with `--release 21` and fail with `--release 20`. The 2019
-snippets never had that check.
+must compile with `--release 21` and fail with `--release 20`.
 
 To try it, add the marketplace and install the plugin:
 
