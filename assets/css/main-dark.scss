@@ -1,0 +1,12 @@
+---
+# Dark palette, loaded by _includes/head/custom.html when the OS prefers dark
+---
+
+@charset "utf-8";
+
+$serif      : "Iosevka Etoile Web", serif;
+$sans-serif : "Iosevka Aile Web", sans-serif;
+$monospace  : "Iosevka Curly Web", monospace;
+
+@import "minimal-mistakes/skins/dark"; // skin
+@import "minimal-mistakes"; // main partials

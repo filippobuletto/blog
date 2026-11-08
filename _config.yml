@@ -12,7 +12,7 @@ github:
   username               : filippobuletto
 facebook:
   username               : filippo.buletto
-minimal_mistakes_skin    : dark
+minimal_mistakes_skin    : default
 search                   : true
 
 # Build settings
@@ -155,7 +155,7 @@ comments:
     category_id          : DIC_kwDOHbj_Ms4CRHSG
     discussion_term      : "og:title"
     reactions_enabled    : "0"
-    theme                : "dark_dimmed"
+    theme                : "preferred_color_scheme"
     data-input-position  : "top"
     data-loading         : "lazy"
 
