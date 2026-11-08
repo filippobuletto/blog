@@ -13,6 +13,9 @@ tags:
 toc: true
 ---
 
+**Update, November 2026:** most snippets in this post don't compile, and some examples show a different problem from the one in their heading. [SOLID Java, revisited](/solid-java-revisited/) lists what's wrong and has corrected code for current Java.
+{: .notice--warning}
+
 # SOLID Java
 
 SOLID states for five design principles that help a developer build easy to extend and maintain software:
