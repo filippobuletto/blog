@@ -101,10 +101,10 @@ Use the java-simplifier agent to simplify my recent changes
 Use the java-simplifier agent to simplify and modernize src/main/java/com/example/orders
 ```
 
-The name matters. In my first eval the prompt only said "simplify my
-recent changes", and the main session did the work itself without calling
-the agent. It got most of it right but kept a wrapper class the agent
-removes. Naming the agent fixed that.
+The request has to name the agent. In my first eval the prompt only said
+"simplify my recent changes", and the main session did the work itself
+without calling the agent. It got most of it right but kept a wrapper
+class the agent removes. Adding the name to the prompt fixed that.
 
 ## Testing it with evals
 
